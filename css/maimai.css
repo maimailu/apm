@@ -1,0 +1,2177 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+	overflow-x: hidden;
+	font-family: "Roboto Slab", "Helvetica Neue", "Microsoft JhengHei", Helvetica, Arial, sans-serif;
+	background: white;
+	color: white;
+}
+
+.navbar-center {
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+	//Bootstrap導覽列Navbar中的選單自動居中
+}
+
+.navbar-collapse-center {
+	text-align: center; //Bootstrap導覽列Navbar中的選單自動居中
+}
+
+.liseli ul {
+	list-style-type: square;
+}
+
+.liseli li {
+	/*   padding-right: 150px;*/
+	margin-bottom: 4px;
+	text-align: left;
+	font-size: 18px;
+}
+
+
+.content_pic {
+	border: 1px solid #fff;
+	padding: 5px;
+	background: #efefef;
+}
+
+
+/*內文p*/
+p {
+	font-family: "Roboto Slab", "Helvetica Neue", "Microsoft JhengHei", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.75;
+	color: #656565;
+
+}
+
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+	outline: 0;
+}
+
+a {
+	color: #1A274B;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+	color: #fec503;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+.img-centered {
+	margin: 0 auto;
+}
+
+
+
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+	/*
+padding-bottom: 56.25%
+為影片高度與寬度的比例16:9計算得來，9除以16=0.5625換算高度比0.5625=56.25%
+padding-top: 30px
+用於修正的高度，可用25px或30px
+*/
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*以上.video-container將youtube影片嵌入RWD*/
+
+.video-play i {
+	margin-left: -10%;
+	margin-top: 25%;
+	font-size: 50px;
+	bg-bg02 border: solid 2px #fff;
+	padding: 13px 12px 17px 18px;
+	background-color: #efefef;
+	color: #777;
+	position: absolute;
+	z-index: 1;
+}
+
+.rounded-x {
+	border-radius: 50% !important;
+}
+
+/*按鈕圓角效果*/
+
+/*以上是影片的play按鈕*/
+
+.moive-bootom {
+	margin-bottom: 20px;
+}
+
+
+.font-title {
+	color: #0687d8;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1em;
+	margin-bottom: 15px;
+}
+
+.font-desc {
+	color: #000000;
+	font-size: 16px;
+	line-height: 1.6em;
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+
+/*內文左右排版的文字*/
+
+.bg-darkest-gray {
+	background-color: #222;
+}
+
+.btn-primary {
+	border-color: #fed136;
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #fff;
+	background-color: #fed136;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+	border-color: #f6bf01;
+	color: #fff;
+	background-color: #fec503;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+	background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+	border-color: #fed136;
+	background-color: #fed136;
+}
+
+.btn-primary .badge {
+	color: #fed136;
+	background-color: #fff;
+}
+
+.btn-xl {
+	padding: 20px 40px;
+	/* border-color: #fed136; */
+	border-radius: 3px;
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	background-color: #3F9FA2;
+}
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+	border-color: #f6bf01;
+	color: #fff;
+	background-color: #fec503;
+}
+
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+	background-image: none;
+}
+
+.btn-xl.disabled,
+.btn-xl[disabled],
+fieldset[disabled] .btn-xl,
+.btn-xl.disabled:hover,
+.btn-xl[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-xl.disabled:focus,
+.btn-xl[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-xl.disabled:active,
+.btn-xl[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-xl.disabled.active,
+.btn-xl[disabled].active,
+fieldset[disabled] .btn-xl.active {
+	border-color: #fed136;
+	background-color: #fed136;
+}
+
+.btn-xl .badge {
+	color: #fed136;
+	background-color: #fff;
+}
+
+.navbar-default {
+	border-color: transparent;
+	background-color: #222;
+}
+
+.navbar-default .navbar-brand {
+	font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+	color: #fed136;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {
+	color: #fec503;
+}
+
+.navbar-default .navbar-collapse {
+	border-color: rgba(255, 255, 255, .02);
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #fed136;
+	background-color: #fed136;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #fed136;
+}
+
+.navbar-default .nav li a {
+	text-transform: uppercase;
+	font-family: "Helvetica Neue", "Microsoft JhengHei", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #fff; //主選按鈕選單顏色
+}
+
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {
+	outline: 0;
+	color: #0077A0;
+}
+
+.navbar-default .navbar-nav>.active>a {
+	border-radius: 0;
+	color: #fff;
+	background-color: #0077A0;
+}
+
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+	color: #fff;
+	background-color: #0077A0;
+}
+
+
+@media(min-width:768px) {
+	.navbar-default {
+		padding: 25px 0;
+		border: 0;
+		background-color: transparent;
+		-webkit-transition: padding .3s;
+		-moz-transition: padding .3s;
+		transition: padding .3s;
+	}
+
+	.navbar-default .navbar-brand {
+		font-size: 2em;
+		-webkit-transition: all .3s;
+		-moz-transition: all .3s;
+		transition: all .3s;
+	}
+
+	.navbar-default .navbar-nav>.active>a {
+		border-radius: 3px;
+	}
+
+	.navbar-default.navbar-shrink {
+		padding: 10px 0;
+		background-color: #222;
+		//top background
+	}
+
+	.navbar-default.navbar-shrink .navbar-brand {
+		font-size: 1.5em;
+	}
+
+}
+
+
+header .intro-text {
+	padding-top: 10px;
+	padding-bottom: 50px;
+}
+
+
+
+
+
+section {
+	padding: 30px 0 30px;
+}
+
+section h2.section-heading {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 30px;
+	font-family: 'Noto Sans TC', 'Noto Serif TC', sans-serif;
+	color: #FF9B50;
+	font-weight: 500;
+}
+
+.section-heading {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 30px;
+	font-family: 'Noto Sans TC', 'Noto Serif TC', sans-serif;
+	color: #FF9B50;
+	font-weight: 600;
+	letter-spacing: 20px;
+}
+
+
+
+.service-heading {
+	margin: 15px 0;
+	text-transform: none;
+}
+
+
+
+.timeline {
+	position: relative;
+	padding: 0;
+	list-style: none;
+}
+
+.timeline:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 40px;
+	width: 2px;
+	margin-left: -1.5px;
+	background-color: #f1f1f1;
+}
+
+.timeline>li {
+	position: relative;
+	margin-bottom: 50px;
+	min-height: 50px;
+}
+
+.timeline>li:before,
+.timeline>li:after {
+	content: " ";
+	display: table;
+}
+
+.timeline>li:after {
+	clear: both;
+}
+
+.timeline>li .timeline-panel {
+	float: right;
+	position: relative;
+	width: 100%;
+	padding: 0 20px 0 100px;
+	text-align: left;
+}
+
+.timeline>li .timeline-panel:before {
+	right: auto;
+	left: -15px;
+	border-right-width: 15px;
+	border-left-width: 0;
+}
+
+.timeline>li .timeline-panel:after {
+	right: auto;
+	left: -14px;
+	border-right-width: 14px;
+	border-left-width: 0;
+}
+
+.timeline>li .timeline-image {
+	z-index: 100;
+	position: absolute;
+	left: 0;
+	width: 80px;
+	height: 80px;
+	margin-left: 0;
+	border: 7px solid #f1f1f1;
+	border-radius: 100%;
+	text-align: center;
+	color: #fff;
+	background-color: #fed136;
+}
+
+.timeline>li .timeline-image h4 {
+	margin-top: 12px;
+	font-size: 10px;
+	line-height: 14px;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel {
+	float: right;
+	padding: 0 20px 0 100px;
+	text-align: left;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:before {
+	right: auto;
+	left: -15px;
+	border-right-width: 15px;
+	border-left-width: 0;
+}
+
+.timeline>li.timeline-inverted>.timeline-panel:after {
+	right: auto;
+	left: -14px;
+	border-right-width: 14px;
+	border-left-width: 0;
+}
+
+.timeline>li:last-child {
+	margin-bottom: 0;
+}
+
+.timeline .timeline-heading h4 {
+	margin-top: 0;
+	color: inherit;
+}
+
+.timeline .timeline-heading h4.subheading {
+	text-transform: none;
+}
+
+.timeline .timeline-body>p,
+.timeline .timeline-body>ul {
+	margin-bottom: 0;
+}
+
+@media(min-width:768px) {
+	.timeline:before {
+		left: 50%;
+	}
+
+	.timeline>li {
+		margin-bottom: 100px;
+		min-height: 100px;
+	}
+
+	.timeline>li .timeline-panel {
+		float: left;
+		width: 41%;
+		padding: 0 20px 20px 30px;
+		text-align: right;
+	}
+
+	.timeline>li .timeline-image {
+		left: 50%;
+		width: 100px;
+		height: 100px;
+		margin-left: -50px;
+	}
+
+	.timeline>li .timeline-image h4 {
+		margin-top: 16px;
+		font-size: 13px;
+		line-height: 18px;
+	}
+
+	.timeline>li.timeline-inverted>.timeline-panel {
+		float: right;
+		padding: 0 30px 20px 20px;
+		text-align: left;
+	}
+}
+
+@media(min-width:992px) {
+	.timeline>li {
+		min-height: 150px;
+	}
+
+	.timeline>li .timeline-panel {
+		padding: 0 20px 20px;
+	}
+
+	.timeline>li .timeline-image {
+		width: 150px;
+		height: 150px;
+		margin-left: -75px;
+	}
+
+	.timeline>li .timeline-image h4 {
+		margin-top: 30px;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.timeline>li.timeline-inverted>.timeline-panel {
+		padding: 0 20px 20px;
+	}
+}
+
+@media(min-width:1200px) {
+	.timeline>li {
+		min-height: 170px;
+	}
+
+	.timeline>li .timeline-panel {
+		padding: 0 20px 20px 100px;
+	}
+
+	.timeline>li .timeline-image {
+		width: 170px;
+		height: 170px;
+		margin-left: -85px;
+	}
+
+	.timeline>li .timeline-image h4 {
+		margin-top: 40px;
+	}
+
+	.timeline>li.timeline-inverted>.timeline-panel {
+		padding: 0 100px 20px 20px;
+	}
+}
+
+
+
+section#contact {
+	background-color: #A08167;
+	background-position: center center;
+	background-repeat: none;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	background-image: url(../pic/contact/contact-bg.jpg);
+	height: 80vh;
+
+}
+
+/*
+section#contact .section-heading {
+    color: #fff;
+針對聯絡我們的title變色
+}
+*/
+
+section#contact .form-group {
+	margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+	padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+	height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+	height: 236px;
+}
+
+section#contact .form-control:focus {
+	border-color: #fed136;
+	box-shadow: none;
+}
+
+section#contact::-webkit-input-placeholder {
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #bbb;
+}
+
+section#contact:-moz-placeholder {
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #bbb;
+}
+
+section#contact::-moz-placeholder {
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #bbb;
+}
+
+section#contact:-ms-input-placeholder {
+	text-transform: uppercase;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	color: #bbb;
+}
+
+section#contact .text-danger {
+	color: #e74c3c;
+}
+
+footer {
+	padding: 20px 0;
+	text-align: center;
+	background: #003A2E;
+	border-top: 1px solid #b6b6b6;
+	margin-bottom: 10px;
+}
+
+
+
+footer span.copyright {
+	text-transform: uppercase;
+	text-transform: none;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	position: relative;
+	color: white;
+	margin-left: -20px;
+}
+
+footer ul.quicklinks {
+	margin-bottom: 0;
+	text-transform: uppercase;
+	text-transform: none;
+	font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 20px;
+	margin-top: 8px;
+}
+
+footer ul.quicklinks a {
+	font-size: 18px;
+	color: #b69159;
+}
+
+ul.social-buttons {
+	margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	font-size: 20px;
+	line-height: 40px;
+	outline: 0;
+	color: #fff;
+	background-color: #000000;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+	background-color: #fed136;
+}
+
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn:active:focus {
+	outline: 0;
+}
+
+.portfolio-modal .modal-content {
+	padding: 100px 0;
+	min-height: 100%;
+	border: 0;
+	border-radius: 0;
+	text-align: center;
+	background-clip: border-box;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.portfolio-modal .modal-content h2 {
+	margin-bottom: 15px;
+	font-size: 3em;
+}
+
+.portfolio-modal .modal-content p {
+	margin-bottom: 30px;
+	color: #000;
+	text-align: left;
+}
+
+
+.portfolio-modal .modal-content p.item-intro {
+	margin: 20px 0 30px;
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-style: italic;
+	text-align: center;
+}
+
+.portfolio-modal .modal-content ul.list-inline {
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.portfolio-modal .modal-content img {
+	margin-bottom: 30px;
+}
+
+.portfolio-modal .close-modal {
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	width: 75px;
+	height: 75px;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.portfolio-modal .close-modal:hover {
+	opacity: .3;
+}
+
+.portfolio-modal .close-modal .lr {
+	z-index: 1051;
+	width: 1px;
+	height: 75px;
+	margin-left: 35px;
+	background-color: #222;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.portfolio-modal .close-modal .lr .rl {
+	z-index: 1052;
+	width: 1px;
+	height: 75px;
+	background-color: #222;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.portfolio-modal .modal-backdrop {
+	display: none;
+	opacity: 0;
+}
+
+::-moz-selection {
+	text-shadow: none;
+	background: #fed136;
+}
+
+::selection {
+	text-shadow: none;
+	background: #fed136;
+}
+
+img::selection {
+	background: 0 0;
+}
+
+img::-moz-selection {
+	background: 0 0;
+}
+
+body {
+	webkit-tap-highlight-color: #fed136;
+}
+
+#imgpadding {
+	padding-left: 50px;
+}
+
+.lineimg {
+	width: 40px;
+	margin-top: -3px;
+}
+
+
+
+.line {
+	float: left;
+	width: 100%;
+	padding: 60px 0 50px;
+}
+
+.vid {
+	position: relative;
+	padding-bottom: 44.25%;
+	/* padding-top: 30px; */
+	height: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+h5 {
+	color: #A5A5A5;
+}
+
+
+
+.Casesfont {
+	margin-top: 140px;
+	font-family: "Helvetica Neue", "Microsoft JhengHei", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	/*基本案子中間介紹文字*/
+}
+
+
+.Casespic {
+	left: 80px;
+	margin-top: 25px;
+}
+
+.gray {
+	color: #666666;
+}
+
+
+
+.list-inline>li {
+	padding: 0;
+	color: black;
+}
+
+
+
+.hr-responsive {
+	max-width: 100%;
+	padding: 40px;
+}
+
+.work-list>div {
+	margin-bottom: 40px;
+}
+
+.work-list {
+	display: flex;
+	align-items: center;
+	/*    垂直置中*/
+	margin-top: 20px;
+}
+
+
+
+
+.address-title {
+	font-size: 15px;
+	display: inline-block;
+	width: 130px;
+	padding-left: 10px;
+}
+
+.address {
+	font-size: 25px;
+	margin-top: 10px;
+	margin-right: 30px;
+}
+
+
+
+.base-info {
+	color: white;
+}
+
+.base-info ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.base-info li {
+	border-left: 2px solid #fff;
+	padding-left: 7px;
+	margin-bottom: 4px;
+	font-size: 17px;
+
+}
+
+.stitle p {
+	font-size: 20px;
+	color: #b69159;
+}
+
+.base-info {
+	color: white;
+}
+
+.base-info ul {
+	list-style-type: none;
+}
+
+.base-info li {
+	border-left: 2px solid #fff;
+	padding-left: 7px;
+	margin-bottom: 4px;
+}
+
+.quicklinks li {
+	display: block;
+}
+
+
+/*--------------以上主按鈕顏色--------------*/
+
+/*--------------電腦版--------------*/
+
+header {
+	text-align: center;
+	color: #fff;
+	background-attachment: scroll;
+	background-image: url(../img/header-bg.png);
+	background-position: center;
+	background-repeat: none;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	/* width: 100%;
+	height: 100px; */
+	max-width: 100%;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+}
+
+
+
+/* section區段元素上下間隔 */
+section {
+	padding: 0 0 0 0;
+}
+
+/* section區段元素上下間隔 end */
+
+
+.pic-relative {
+
+	position: relative;
+}
+
+/* 右側圖片區域控制（含平板響應） */
+.image-content-area {
+	position: absolute;
+	left: 8%;
+	/* default desktop spacing */
+	top: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+
+
+/* Ensure images inside logo and slogan are centered */
+.logo img,
+.slogan-pic img {
+	width: 100%;
+}
+
+/* Logo / slogan base sizes */
+.logo {
+	width: 16%;
+	margin-bottom: 24px;
+	/* 與 logan-pic 增加間距 */
+}
+
+.slogan-pic {
+	width: 40%;
+}
+
+.house-absolute {
+	position: absolute;
+	bottom: 0;
+	left: 10%;
+	width: 20%;
+}
+
+.w-full {
+	width: 100%;
+}
+
+
+.max-w-full {
+	max-width: 100%;
+}
+
+
+
+
+
+.address-title {
+	font-size: 18px;
+	display: inline-block;
+	width: 100px;
+	padding-left: 10px;
+	color: #A3A2A2;
+}
+
+/*連絡我們標題有分區，使用 display: inline-block;效果可以讓許多區塊自動浮動起來水平排列*/
+
+.address-title1 {
+	font-size: 18px;
+	width: 100px;
+	padding-left: 10px;
+	color: #A3A2A2;
+}
+
+/*連絡我們標題有分區，取消使用 display: inline-block;
+效果*/
+
+
+
+
+
+.work-list {
+	display: flex;
+	flex-flow: row wrap; //一個簡化寫法的屬性，可以同時控制 flex-direction 以及 flex-wrap。
+	align-content: space-around; //決定我們每一個 Items的垂直對齊方式，共五種。/* 分散對齊(前後留邊) */
+	/*     解除 display: flex;
+               align-items: center;電腦版的垂直置中*/
+}
+
+
+section h2.section-heading1 {
+	margin-top: 40px;
+	margin-bottom: 15px;
+	font-size: 30px;
+	font-family: 'Noto Serif TC', "Helvetica Neue", "Microsoft JhengHei", Helvetica, Arial, sans-serif;
+	color: #b2b2b2;
+}
+
+section h3.section-subheading {
+	text-transform: none;
+	font-family: 'Noto Serif TC', serif;
+	font-size: 18px;
+	font-weight: 300;
+	color: #595757;
+}
+
+.slogan-bottom {
+	margin-left: -6px;
+	/*  聯絡我們slogan*/
+}
+
+
+
+
+
+
+
+/*下拉提示箭頭 scroll down 開始 */
+
+@-moz-keyframes bounce {
+
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-moz-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-moz-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+
+	60% {
+		-moz-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
+
+@-webkit-keyframes bounce {
+
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+
+	60% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
+
+@keyframes bounce {
+
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-moz-transform: translateY(0);
+		-ms-transform: translateY(0);
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-moz-transform: translateY(-30px);
+		-ms-transform: translateY(-30px);
+		-webkit-transform: translateY(-30px);
+		transform: translateY(-30px);
+	}
+
+	60% {
+		-moz-transform: translateY(-15px);
+		-ms-transform: translateY(-15px);
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
+
+
+.arrow {
+	position: absolute;
+	bottom: 100;
+	left: 50%;
+	margin-left: -20px;
+	width: 40px;
+	height: 60px;
+	/*change with size of arrow to make sit on bottom */
+	/*   background-image: url(); */
+	/*   background-size: contain; */
+	margin-top: 34vh;
+	color: #0077A0;
+}
+
+.bounce {
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
+
+/*下拉提示箭頭 scroll down 結束 */
+
+
+
+
+
+
+/*三排橫建築圖片*/
+.work-list {
+	display: flex;
+	align-items: center;
+	/*    垂直置中*/
+}
+
+.work-list {
+	display: flex;
+	flex-flow: row wrap; //一個簡化寫法的屬性，可以同時控制 flex-direction 以及 flex-wrap。
+	align-content: space-around; //決定我們每一個 Items的垂直對齊方式，共五種。/* 分散對齊(前後留邊) */
+	/*     解除 display: flex;
+               align-items: center;電腦版的垂直置中*/
+}
+
+
+
+
+
+.section-heading1 {
+	margin-top: 0;
+	margin-bottom: 15px;
+	font-size: 30px;
+	font-family: 'Noto Serif TC', sans-serif;
+	color: #b2b2b2;
+	font-weight: 500;
+}
+
+
+
+.navbar-default .nav li a {
+	//隱藏主選按鈕選單按鈕 ;
+	display: none;
+}
+
+.navbar-default.navbar-shrink {
+	//隱藏主選按鈕選單底 ;
+	display: none;
+}
+
+
+/*新的區域縣市表單設定*/
+section#contact1 {
+	background-color: #f2f5ef;
+	background-position: center center;
+	background-repeat: none;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	background-image: url(../pic/5/bg05.jpg);
+	height: 800px;
+}
+
+/*輪動照片左右按鈕底取消*/
+.carousel-control.right {
+	background-image: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 0%));
+}
+
+.carousel-control.left {
+	background-image: linear-gradient(rgb(0 0 0 / 0%), rgb(0 0 0 / 0%));
+}
+
+
+
+.contact-box {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+/*連絡我們上方間距*/
+.contact_from {
+	margin-top: 20px;
+
+}
+
+.contact-title {
+	width: 100%;
+	margin: auto;
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+
+
+
+/*手機手指圖設定*/
+.s-block-view-btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	vertical-align: middle;
+	transform: translateX(-50%);
+	width: 10rem;
+	height: 10rem;
+	text-align: center;
+	line-height: 1.5;
+	background-color: #222;
+	border-radius: 5px;
+	overflow: hidden;
+	color: #fff;
+	font-size: 6vh;
+	opacity: .8;
+	z-index: 3;
+	animation: slideInLeft 2s linear infinite alternate;
+	--animate-repeat: 2;
+	display: none;
+}
+
+
+
+.s-block-view-btn p {
+	font-size: 12px;
+	font-weight: 500;
+	color: #fff !important;
+}
+
+.s-block-view-btn p span {
+	display: block;
+	width: 60px;
+	height: 60px;
+	margin: 8px auto 10px auto;
+	background: url(../img/swipe.svg) no-repeat;
+}
+
+
+/*空拍滑動設定*/
+.scrolling-wrapper,
+.scrolling-wrapper-flexbox {
+	height: 50%;
+	margin-bottom: 0px;
+	width: 100%;
+	-webkit-overflow-scrolling: touch;
+}
+
+/*空拍滾動條隱藏*/
+.scrolling-wrapper {
+	overflow-x: hidden;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+/*空拍手機版隱藏*/
+.iphone-env {
+	display: none;
+}
+
+
+
+/*swiper-slide 照片大小設定*/
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 80%;
+	object-fit: cover;
+}
+
+
+.swiper {
+	width: 100%;
+	height: 80%;
+}
+
+/*水平橫線*/
+.hori-line {
+	height: 1px;
+	border-top: solid #a6a6a6 1px;
+	margin: 2%;
+
+}
+
+
+/* env01環境空拍文字壓在圖片上 */
+
+.env-pic01 {
+	position: relative;
+	/*表示它是基準元素*/
+}
+
+.env-stage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 99;
+	/* z-index的範圍擋住的底圖 雖然沒有看到 但是他的寬跟高是全滿的 等於蓋著手機那張圖了，所以滑動的行為是摸到標題了 不是底圖 */
+	pointer-events: none;
+	/* 穿透的 div ( pointer-events )，簡單來說就是讓滑鼠點不到標題 */
+}
+
+.env-title01 {
+	color: #A08167;
+	text-align: center;
+	font-family: 'Noto Sans TC', 'Noto Serif TC', sans-serif;
+	font-size: 50px;
+	z-index: 5;
+	padding-top: 2%;
+
+}
+
+.env1-title-en {
+	margin-top: 0;
+	margin-bottom: 0px;
+	font-size: 30px;
+	font-family: 'Noto Sans TC', 'Noto Serif TC', sans-serif;
+	color: #DCD8D3;
+	font-weight: 600;
+	padding-bottom: 1%;
+}
+
+
+.env-textmain1 {
+	font-size: 18px;
+	font-weight: 400;
+	color: #A08167;
+	letter-spacing: 2px; //控制字元間距的屬性
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.678);
+}
+
+
+
+
+span.cpu-break {
+	display: block;
+}
+
+/* 電腦版分行斷落取消 */
+span.iphone-break {
+	display: inline;
+}
+
+
+.infoImg {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: #fff;
+	/* width: 100%; */
+	padding: 3px;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.678);
+	font-size: 1.5rem;
+	z-index: 10;
+}
+
+
+
+/* 連絡連結訊息 */
+.contact-bt {
+	width: 420px;
+	height: 45px;
+	border: 0;
+	background-color: #003A2E;
+	color: #fff;
+	border-radius: 10px;
+	padding: 10px 10px 10px 10px;
+	display: block;
+	text-align: center;
+	margin: 6px;
+}
+
+.button-text {
+	font-size: 16px;
+}
+
+.contact-infor {
+	display: flex;
+	justify-content: center;
+
+}
+
+.contact-infor a:hover,
+a:visited,
+a:link,
+a:active {
+	text-decoration: none;
+}
+
+
+
+.contact-slogan img {
+	width: 16%;
+	max-width: 320px;
+	height: auto;
+	display: block;
+	margin: 24px auto 24px auto;
+}
+
+
+
+
+/* 連絡連結訊息 end */
+
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+
+
+	header {
+		text-align: center;
+		color: #fff;
+		background-attachment: scroll;
+		background-position: center center;
+		background-repeat: none;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		height: 800px;
+	}
+
+
+	.image-content-area {
+		right: 50px;
+		top: 11%;
+	}
+
+	.logo {
+		width: 16%;
+	}
+
+	.slogan-pic {
+		width: 46%;
+	}
+
+
+
+
+}
+
+
+@media screen and (max-width: 1280px) {
+
+	/*
+	header {
+		text-align: center;
+		color: #fff;
+		background-attachment: scroll;
+		background-image: url(../img/iphone-header-bg.jpg);
+		background-position: center center;
+		background-repeat: none;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		height: 100vh;
+	}
+*/
+
+
+
+	.navbar-default .nav li a {
+		//顯示主選按鈕選單按鈕 ;
+		display: block;
+	}
+
+	.navbar-default.navbar-shrink {
+		//顯示主選按鈕選單底 ;
+		display: block;
+	}
+
+
+	/* 空拍文字 */
+	.env1-title-en {
+		margin-top: 0;
+		margin-bottom: 0px;
+		font-size: 30px;
+		font-family: 'Noto Serif TC', sans-serif;
+		color: #b9b9b982;
+		font-weight: 300;
+	}
+
+
+	.env-textmain1 {
+		font-size: 16px;
+		font-weight: 400;
+		color: #A08167;
+		letter-spacing: 2px; //控制字元間距的屬性
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.678);
+	}
+
+
+
+	.logo {
+		width: 20%;
+	}
+
+	.logan-pic {
+		width: 50%;
+	}
+
+
+
+	section#contact {
+		height: auto;
+	}
+
+}
+
+
+/* Medium tablets */
+@media screen and (max-width: 992px) {
+	.image-content-area {
+		right: 40px;
+		top: 12%;
+	}
+
+
+
+}
+
+
+
+@media screen and (max-width: 820px) {
+
+	header {
+		/* background-image: url(../img/header-bg.png); */
+		background-size: cover;
+		background-position: top center;
+		display: flex;
+		background-repeat: none;
+		width: 100%;
+		height: 500px;
+
+	}
+
+
+	/* 連絡表單寬度 縮小寬+置中 */
+	.contact-list {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	/* 空拍文字 */
+
+	.env-textmain1 {
+		font-size: 14px;
+		font-weight: 400;
+		color: #A08167;
+		letter-spacing: 2px; //控制字元間距的屬性
+		text-shadow: 0 0 10px rgba(0, 0, 0, 0.678);
+		line-height: 18px
+	}
+
+
+
+
+	.logo {
+		width: 20%;
+	}
+
+	.slogan-pic {
+		width: 40%;
+	}
+
+
+
+
+
+	section#contact {
+		height: auto;
+	}
+
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+
+	/*    手機內文P不設左右對齊，電腦和IPAD設左右對齊*/
+	.textmain {
+		font-size: 14px;
+		font-weight: 600;
+		margin-top: 20px;
+		letter-spacing: 2px; //控制字元間距的屬性
+	}
+
+	section h2.section-heading1 {
+		font-size: 22px;
+	}
+
+	/*背景*/
+
+	section#contact {
+		height: auto;
+
+
+	}
+
+	/*內容容器限寬文字位置*/
+	.center-center {
+		margin-top: 0px;
+	}
+
+
+	.section-title3 {
+		font-size: 26px;
+		letter-spacing: 2px;
+	}
+
+	.contact-title {
+		width: 60%;
+		margin: auto;
+		margin-bottom: 20px;
+		font-size: 26px;
+	}
+
+
+
+
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+
+
+	header {
+		text-align: center;
+		color: #fff;
+		background-attachment: scroll;
+		background-image: url(../img/iphone-header-bg.png);
+		background-position: center center;
+		background-repeat: none;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		height: 850px;
+	}
+
+
+
+	/*空拍電腦版隱藏*/
+	.compture-env {
+		display: none;
+
+		height: 1200px;
+		margin: 0 auto;
+	}
+
+	/*空拍手機版顯示*/
+	.iphone-env {
+		display: block;
+	}
+
+
+
+	/*	手機版手指按鈕【顯示】圖*/
+	.s-block-view-btn {
+		display: block;
+	}
+
+
+	/*	手機空拍圖設定適合手機大小，不設定會太長*/
+	.map-bg {
+		480 position: relative;
+		display: flex;
+		max-height: 60vh;
+		overflow: hidden;
+		width: auto;
+	}
+
+	/*	手機滾動條顯示*/
+	.scrolling-wrapper {
+		overflow-x: scroll;
+	}
+
+	/*	手機版黑色漸層圖*/
+	.overlay-cover {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		color: #fff;
+		background-color: rgba(0, 0, 0, .6);
+		text-align: center;
+		left: 0;
+		z-index: 999;
+	}
+
+	/*	外層比需要包一層position-relative
+就不會一直跑去外面了*/
+	.position-relative {
+		position: relative;
+	}
+
+
+	/*連絡我們 背景*/
+
+
+	section#contact {
+		background-color: #A08167;
+		background-position: center center;
+		background-repeat: none;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+		background-image: url(../pic/contact/contact-bg-iphone.jpg);
+	}
+
+	/* 隱藏連絡我們按鈕連結 */
+	/* .contact-infor-list {
+
+		display: none;
+	} */
+
+
+	/* 連絡連結訊息 */
+	.contact-bt {
+		width: 420px;
+		height: 60px;
+		border: 0;
+		background-color: #003A2E;
+		color: #fff;
+		border-radius: 10px;
+		padding: 10px 10px 10px 10px;
+		margin: 6px;
+		display: block;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	.contact-slogan img {
+		width: 50%;
+
+	}
+
+
+
+	/* 連絡表單寬度 縮小寬+置中 */
+	.contact-list {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+
+	.section-heading {
+		margin-top: 0;
+		margin-bottom: 15px;
+		font-size: 26px;
+		font-family: 'Noto Serif TC', sans-serif;
+		color: #333333;
+		font-weight: 300;
+		letter-spacing: 5px;
+	}
+
+	.textmain-right {
+		font-size: 14px;
+		font-weight: 600;
+		text-align: justify;
+		color: #545352;
+		padding-top: 10px;
+		letter-spacing: 2px;
+		width: 88%;
+		margin-left: 6%;
+	}
+
+	.box-relative {
+		position: relative;
+		height: 300px;
+	}
+
+
+
+
+	/* 空拍圖文 */
+	.env1-title-en {
+		margin-top: 0;
+		margin-bottom: 0px;
+		font-size: 20px;
+	}
+
+	.env1-title {
+		margin-top: 0;
+		margin-bottom: 4px;
+		font-size: 20px;
+	}
+
+	.env-textmain1 {
+		font-size: 10px;
+		color: #A08167;
+		letter-spacing: 0px;
+	}
+
+	.section-heading {
+		margin-top: 0;
+		margin-bottom: 5px;
+		font-size: 14px;
+		font-family: 'Noto Sans TC', 'Noto Serif TC', sans-serif;
+		color: #FF9B50;
+		font-weight: 600;
+		letter-spacing: 10px;
+	}
+
+	.infoImg {
+		font-size: 1rem;
+	}
+
+
+	span.iphone-break {
+		display: block;
+	}
+
+	/* 電腦版分行斷落取消 */
+	span.cpu-break {
+		display: inline;
+	}
+
+
+	.image-content-area {
+		position: absolute;
+		/* 允許 top 生效 */
+		top: 20%;
+		/* 480 尺寸要求 */
+		left: 50%;
+		transform: translateX(-50%);
+		/* 置中 */
+		margin: 0 auto;
+		right: auto;
+	}
+
+	.logo {
+		width: 40%;
+	}
+
+
+	.slogan-pic {
+		width: 80%;
+	}
+
+
+	.house-absolute {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 50%;
+		max-width: 420px;
+	}
+
+
+
+	.contact-title {
+		width: 80%;
+		margin: auto;
+		margin-bottom: 20px;
+		font-size: 26px;
+	}
+
+
+}
+
+
+/* @media screen and (max-width: 430px) {
+
+
+	.logo-absolute {
+		position: absolute;
+		left: 20%;
+		top: 0%;
+		right: 0%;
+	}
+
+	.logo {
+		width: 80%;
+	}
+
+
+	.slogan-pic {
+		width: 80%;
+	}
+
+
+	.house-absolute {
+		position: absolute;
+		bottom: 0;
+		right: 50%;
+		transform: translateX(50%);
+		width: 50%;
+	}
+
+
+} */
+
+
+
+
+
+@media screen and (max-width: 414px) {
+
+
+	/*聯絡我們 */
+
+	.contact-box {
+		padding-top: 0px;
+		padding-bottom: 60px;
+	}
+
+
+	/* 將父層元素 display 設置為 flex */
+	.contact-slogan {
+		display: flex;
+	}
+
+	/* 將子元素 margin 設置為 auto，將子元素水平垂直對齊到中間 */
+	.box {
+		width: 60%;
+		margin: auto;
+	}
+
+
+}
+
+
+
+@media screen and (max-width: 375px) {
+
+
+	/*連絡我們 背景*/
+
+	section#contact {
+
+		height: auto;
+	}
+
+	.contact-slogan img {
+		margin: 50px auto 24px auto;
+		width: 80%;
+
+	}
+
+	.house-absolute {
+
+		width: 70%;
+
+	}
+
+
+}
+
+
+/*城市區域下拉選單css*/
+.city {
+	margin-bottom: 1.5rem !important;
+}
+
+.sex {
+	margin-bottom: 1.5rem !important;
+}
+
+.form-control {
+	color: #979191;
+	height: 50px;
+}
+
+section#contact .form-group input.form-control {
+	height: 50px;
+}
+
+section#contact .form-group {
+	margin-bottom: 10px;
+}
+
+
+/*結束--城市區域下拉選單css*/
+
+
+/*影片css*/
+.vdo-cover {
+	width: auto;
+	margin: 50px auto;
+	display: inline-block;
+	position: relative;
+
+}
+
+.vdo-poster {
+	position: relative;
+	z-index: 1;
+}
+
+.vdo-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*影片按鈕樣式*/
+.iconButton {
+	position: absolute;
+	z-index: 99;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #ffffff80;
+	border-radius: 100%;
+	width: 80px;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.iconButton span {
+	color: #333;
+	font-size: 52px;
+	transition: 0.3s;
+}
+
+.iconButton:hover span {
+	color: #ff6a00;
+}
+
+
+/*影片大小設定*/
+.wrap {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+
+
+/*元素置中*/
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* margin-bottom: 10%; */
+}

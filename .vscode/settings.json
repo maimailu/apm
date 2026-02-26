@@ -1,0 +1,10 @@
+{
+    "editor.formatOnSave": true,
+    "html.format.unformatted": "",
+  "prettier.singleQuote": true,
+  "prettier.semi": false,
+  "prettier.printWidth": 120,
+  "prettier.trailingComma": "es5",
+  "prettier.tabWidth": 4,
+  "liveServer.settings.port": 5501
+}
